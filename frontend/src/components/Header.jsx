@@ -15,7 +15,7 @@ function Header() {
   }
 
   return (
-    <header classname = 'header'>
+    <header className = 'header'>
         <div className="logo">
             <Link to='/' >GoalSetter</Link>
         </div>
@@ -26,17 +26,18 @@ function Header() {
                         <FaSignOutAlt /> Logout 
                     </button>
                 </li>
-            ) : (<>  
-            <li>
+            ) : (
+            <>  
+              <li>
                 <Link to='/login'>
                     <FaSignInAlt /> Login 
                 </Link>
-            </li>
-            <li>
+              </li>
+              <li>
                 <Link to='/register'>
                     <FaUser /> Register
                 </Link>
-            </li>
+              </li>
             </>)}
  
         </ul>

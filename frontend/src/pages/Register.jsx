@@ -60,7 +60,8 @@ function Register() {
     return <Spinner />
   }
 
-  return <>
+  return (
+  <>
     <section className="heading">
       <h1>
         <FaUser /> Register
@@ -117,6 +118,7 @@ function Register() {
     </section>
   
   </>
+  )
 }
 
 export default Register

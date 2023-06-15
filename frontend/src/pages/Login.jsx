@@ -42,7 +42,7 @@ function Login() {
   }
 
   const onSubmit = (e) => {
-    e.preventDeault()
+    e.preventDefault()
 
     const userData = {
       email,
@@ -55,7 +55,8 @@ function Login() {
     return <Spinner />
   }
 
-  return <>
+  return (
+  <>
     <section className="heading">
       <h1>
         <FaSignInAlt /> Login
@@ -66,7 +67,8 @@ function Login() {
     <section className="form">
       <form onSubmit={onSubmit}> 
         <div className="form-group">
-          <input type="email" 
+          <input 
+          type="email" 
           className="form-control" 
           id="email" 
           name="email" 
@@ -74,9 +76,9 @@ function Login() {
           placeholder="Enter your email" 
           onChange={onChange}/>
         </div>
-
         <div className="form-group">
-          <input type="password" 
+          <input 
+          type="password" 
           className="form-control" 
           id="password" 
           name="password" 
@@ -92,6 +94,7 @@ function Login() {
     </section>
   
   </>
+  )
 }
 
 export default Login
